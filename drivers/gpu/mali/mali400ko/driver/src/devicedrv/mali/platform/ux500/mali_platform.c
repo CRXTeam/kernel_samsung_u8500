@@ -40,9 +40,6 @@
 #define MALI_HIGH_TO_LOW_LEVEL_UTILIZATION_LIMIT 64
 #define MALI_LOW_TO_HIGH_LEVEL_UTILIZATION_LIMIT 192
 
-unsigned int mali_utilization_high_to_low = MALI_HIGH_TO_LOW_LEVEL_UTILIZATION_LIMIT;
-unsigned int mali_utilization_low_to_high = MALI_LOW_TO_HIGH_LEVEL_UTILIZATION_LIMIT;
-
 #define MALI_UX500_VERSION		"1.0.1"
 
 #define MALI_MAX_UTILIZATION		256
@@ -788,3 +785,4 @@ void set_mali_parent_power_domain(void *dev)
 {
 	MALI_DEBUG_PRINT(2, ("This function should not be called since we are not using run time pm\n"));
 }
+
